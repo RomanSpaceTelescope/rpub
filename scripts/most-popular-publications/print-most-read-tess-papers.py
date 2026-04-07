@@ -1,5 +1,5 @@
 import datetime
-import tpub
+import rpub
 
 def print_articles(articles):
     for idx, art in enumerate(articles):
@@ -11,7 +11,7 @@ def print_articles(articles):
 
 
 if __name__ == "__main__":
-    db = tpub.PublicationDB()
+    db = rpub.PublicationDB()
     articles = db.get_most_read(mission="tess", top=10)
     print("THE 10 MOST READ TESS PAPERS IN THE LAST 90 DAYS\n"
           "==============================================\n"
